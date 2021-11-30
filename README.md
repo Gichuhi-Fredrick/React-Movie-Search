@@ -1,7 +1,7 @@
 ### Links
 
-- GitHub URL: (https://github.com/stormFred/React-Movie-Search)
-- Live Site URL:(https://stormfred-portfolio.netlify.app)
+- GitHub URL: (https://github.com/Gichuhi-Fredrick/React-Movie-Search)
+- Live Site URL:(https://searchmoviewithreactjs.netlify.app/)
 
 ## My process
 
