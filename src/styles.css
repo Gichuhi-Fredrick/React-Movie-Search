@@ -1,151 +1,166 @@
 html {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color:black;
-	color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 17, 17);
+  color: #333;
+}
+
+input {
+  outline: none;
+  border: none;
 }
 
 p {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+h3,
+p {
+  color: white;
+}
+img:hover {
+  cursor: pointer;
+  transition: 2s;
+  transform: rotate(2deg) scale(1.1);
 }
 
 .trending,
 .trending--movie {
-	display: grid;
-	text-align: center;
+  display: grid;
+  text-align: center;
 }
 
 .trending--heading {
-	font-size: 3rem;
-	text-align: center;
+  font-size: 3rem;
+  text-align: center;
 }
 
 small {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1000px;
-	padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
 }
 
 .title {
-	font-size: 4.4rem;
-	text-align: center;
+  font-size: 4.4rem;
+  text-align: center;
 }
 
 .form {
-	display: grid;
+  display: grid;
 }
 
 .label {
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin-bottom: 0.4rem;
-	text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 
 .input {
-	font-size: 1.6rem;
-	padding: 0.5rem 2rem;
-	line-height: 2.8rem;
-	border-radius: 2rem;
-	border: 1px solid black;
-	margin-bottom: 1rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
 }
 
 .button {
-	color: white;
-	cursor: pointer;
-	font-size: 1.4rem;
-	padding: 1rem 2rem;
-	border-radius: 2rem;
-	border: 1px solid rgba(0, 0, 0, 0.75);
-	background-color: rgba(0, 0, 0, 0.75);
-	transition: background-color 250ms;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: background-color 250ms;
 }
 
 .button:hover {
-	background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .card-list {
-	display: grid;
-	margin-top: 4rem;
+  display: grid;
+  margin-top: 4rem;
 }
 
 .card {
-	padding: 2rem 4rem;
-	border-radius: 1rem;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-	margin-bottom: 2rem;
-	background-color: white;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
 }
 
 .card--title {
-	margin-bottom: 0.5rem;
-	font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.8rem;
+  font-weight: 400;
 }
 
 .card--image {
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: 786px) {
-	.form {
-		grid-template-columns: auto 1fr auto;
-		grid-gap: 1rem;
-		align-items: center;
-	}
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
 
-	.label {
-		font-size: 2rem;
-		margin-bottom: 0.7rem;
-	}
-	input {
-		margin-bottom: 0;
-	}
+  .label {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  input {
+    margin-bottom: 0;
+  }
 
-	.button {
-		margin-bottom: 1rem;
-		padding: 1rem 4rem;
-	}
+  .button {
+    margin-bottom: 1rem;
+    padding: 1rem 4rem;
+  }
 
-	.card-list {
-		grid-template-columns: repeat(3, auto);
-		margin-left: -8%;
-		gap: 2rem;
-	}
+  .card-list {
+    grid-template-columns: repeat(3, auto);
+    margin-left: -8%;
+    gap: 2rem;
+  }
 
-	.card {
-		width: 35rem;
-	}
+  .card {
+    width: 35rem;
+  }
 
-	.trending {
-		gap: 2rem;
-		margin-left: -8%;
-		grid-template-columns: repeat(4, auto);
-		grid-template-rows: repeat(auto, auto);
-	}
-	.trending--movie {
-		padding: 1rem;
-		border-radius: 1rem;
-		width: 25rem;
-		row-gap: 2rem;
-	}
+  .trending {
+    gap: 2rem;
+    margin-left: -8%;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(auto, auto);
+  }
+  .trending--movie {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 25rem;
+    row-gap: 2rem;
+  }
 
-	.trend--image {
-		height: 30rem;
-		width: 90%;
-	}
+  .trend--image {
+    height: 30rem;
+    width: 90%;
+  }
 }
