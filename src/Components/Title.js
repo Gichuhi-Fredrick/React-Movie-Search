@@ -1,10 +1,10 @@
-import React from 'react'
-import '../styles.css'
+import React from "react";
+import "../styles.css";
 
 export default function Title() {
-	return (
-		<div>
-			<h1 className="title">React Movie Search</h1>
-		</div>
-	)
+  return (
+    <div>
+      <h1 className="title">Movie Search App</h1>
+    </div>
+  );
 }
